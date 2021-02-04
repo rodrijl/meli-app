@@ -26,6 +26,12 @@ const ProductDetails = (props) => {
     } else {
         const {item: {price: {currency, amount, decimals}, condition, sold_quantity, title, picture, description}} = productDetail;
 
+        let status = condition; 
+        if (condition && condition.toLowerCase() === 'nuevo') {
+            let soldText = sold_quantity === 1? 'vendido' : 'vendidos';
+            status = `${condition} - ${sold_quantity} ${soldText}`;
+        }
+
         product = (
             <div>
                 <Breadcrumb filters={filters}/>
@@ -33,7 +39,7 @@ const ProductDetails = (props) => {
                     <div className="information">
                         <img src={picture} alt="Product detail image"/>
                         <div className="details">
-                            <h5 className="condition">{`${condition} - ${sold_quantity} vendidos`}</h5>
+                            <h5 className="condition">{status}</h5>
                             <h2 className="title">{title}</h2>
                             <h1 className="price">{`${currency} ${amount}`}<sup>{decimals}</sup></h1>
                             <button className="btn">Comprar</button>

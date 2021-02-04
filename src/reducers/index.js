@@ -35,7 +35,8 @@ const productsStore = (state = initialState, action) => {
         case SUCCES_GET_PRODUCT_DETAILS:
             return state.merge({
                 productDetail: action.productDetail,
-                loading: false
+                loading: false,
+                filters: action.filters
             });
         case START_GET_PRODUCT_DETAILS:
             return state.merge ({

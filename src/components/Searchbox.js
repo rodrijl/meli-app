@@ -16,8 +16,11 @@ const Searchbox = ({history}) => {
 
     const handleGetProducts = () => history.push(`/items?search=${searchText}`);
 
-    const handleGoToHome = () => history.push('/');
-
+    const handleGoToHome = () => {
+        setSearchText('');
+        history.push('/');
+    }
+    
     return (
         <div className="header">
             <img src="/images/ml.png" className="logo" alt="Mercado Libre logo" onClick={handleGoToHome}/>
