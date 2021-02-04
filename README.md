@@ -18,4 +18,4 @@ Then to start the project run the follwing command:
 
 In order to search and create products you need the server running. More info here:https://github.com/rodrijl/meli-app-server.
 
-Also you can see a deploy here : http://mindswood.xyz/
+Also you can see a deploy here : http://mindswood.xyz/ (Here you can search with the words : 'funda', 'macbook', 'iphone')
