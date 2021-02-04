@@ -3,7 +3,7 @@ This project consist in a search engine for products, similar to the one used by
 
 ## Tecnologies Applied
 
-This project is based on ReactJS and Redux using Hooks with functional components. In the order hand, also Sass, fetch, Immutable.js, ECMAScript, MongoDB, Mongoose, Node.js and Jest has been used. BEM methodology has been used for the styles
+This project is based on ReactJS and Redux using Hooks with functional components. In the order hand, also Sass, fetch, Immutable.js, ECMAScript, MongoDB, Mongoose, Node.js and Jest has been used.
 
 ### Run the project
 
