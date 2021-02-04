@@ -16,4 +16,4 @@ Then to start the project run the follwing command:
 ### `npm start`
 
 
-Also you can found this poject at:
+In order to search the products you need the server running. More info here:https://github.com/rodrijl/meli-app-server
