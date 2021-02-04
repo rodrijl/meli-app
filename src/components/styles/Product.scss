@@ -1,0 +1,38 @@
+@import "../../scss/base.scss";
+
+.product {
+    .product-item {
+        display: flex;
+        padding: $padding-small;
+
+        .product-info {
+            width: 65%;
+            padding: 0 $padding-small;
+            background-color: inherit;
+        }
+
+        img {
+            border-radius: 4px;
+        }
+
+        small {
+            font-size: $font-size-x-small;
+            font-family: $font-primary;
+            margin: $padding-small 0;
+        }
+
+        p {
+            font-size: $font-size-large;
+        }
+    }
+    .product-item:hover {
+        background-color: #f8f8f8;
+    }
+    .division {
+        border-style: solid;
+        border-color: $color-cuaternary;
+        border-width: thin;
+        width: 97%;
+        margin: 0 auto;
+    }
+}
